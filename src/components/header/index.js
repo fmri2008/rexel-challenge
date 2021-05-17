@@ -22,7 +22,6 @@ const Header = () => {
       axios
         .get('https://dog.ceo/api/breeds/list/all')
         .then((res) => {
-          console.log(typeof Object.keys(res.data.message));
           setList(
             Object.keys(res.data.message).filter((ele) =>
               ele.trim().toLowerCase().includes(value.trim().toLowerCase())
