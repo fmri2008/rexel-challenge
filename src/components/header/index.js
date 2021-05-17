@@ -36,7 +36,13 @@ const Header = () => {
   };
 
   const onClickList = (e) => {
-    setSearchTerm(e.target.attributes.val.nodeValue);
+    const val = e.target.attributes.val.nodeValue;
+    setSearchTerm(val);
+    setList(
+      list.filter((ele) =>
+        ele.trim().toLowerCase().includes(val.trim().toLowerCase())
+      )
+    );
   };
 
   return (
