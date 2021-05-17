@@ -45,3 +45,7 @@
 .header-search-result li {
   margin-left: -20px;
 }
+
+.header-search-result li:hover {
+  cursor: pointer;
+}

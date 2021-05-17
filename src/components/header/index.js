@@ -35,6 +35,10 @@ const Header = () => {
     }
   };
 
+  const onClickList = (e) => {
+    setSearchTerm(e.target.attributes.val.nodeValue);
+  };
+
   return (
     <>
       <div className="header-wrapper">
@@ -59,7 +63,9 @@ const Header = () => {
         {list.length !== 0 && (
           <ul className="header-search-result">
             {list.map((ele) => (
-              <li key={ele}>{ele}</li>
+              <li onClick={onClickList} val={ele} key={ele}>
+                {ele}
+              </li>
             ))}
           </ul>
         )}
