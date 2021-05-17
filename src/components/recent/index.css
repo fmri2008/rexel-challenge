@@ -1,0 +1,25 @@
+.recent-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 20px 10px;
+  padding: 20px 10px;
+}
+
+.recent-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.recent-viewall {
+  color: green;
+}
+
+.recent-items-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

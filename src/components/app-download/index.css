@@ -1,0 +1,21 @@
+.app-download-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.app-download-img {
+  width: 100%;
+  height: auto;
+  object-position: right center;
+  object-fit: cover;
+}
+
+.app-download-caption {
+  background-color: white;
+  text-align: center;
+  margin: 0 10px 70px 10px;
+  padding: 10px 10px;
+}
